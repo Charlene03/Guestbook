@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :groups, :users,  #給多個資源建立路由
+  resources :groups, :comments, :categories
+  root 'posts#index'
+  resources :posts do 
+    resources :comments 
+  end
+  #方法一:users,  #給多個資源建立路由
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,7 +14,19 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  # 方法二 定義單一個url:get 'users' => 'users#index'  http verb + user 對應的是
+  
+  get '/register', to: 'users#new'
+  get '/login', to: 'sessions#new'  #登入表單各由
+  post '/login', to: 'sessions#create' #送出登入表單 
+  get '/logout', to: 'sessions#destroy' #登出路由
+
+  
+  # 方法二 定義單一個url:如下http verb + user 
+  resources :users, only: [:new, :create, :edit, :update, :show]
+
+  resources :posts do 
+      resources :comments 
+  end 
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

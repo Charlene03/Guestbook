@@ -1,0 +1,3 @@
+回復到上一個版本的migration
+
+rake db:rollback
