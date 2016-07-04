@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  resources :groups, :comments, :categories
+  
   root 'posts#index'
-  resources :posts do 
-    resources :comments 
-  end
+  
   #方法一:users,  #給多個資源建立路由
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -23,7 +21,8 @@ Rails.application.routes.draw do
   
   # 方法二 定義單一個url:如下http verb + user 
   resources :users, only: [:new, :create, :edit, :update, :show]
-
+  resources :categories, only: [:index, :new, :create]
+  
   resources :posts do 
       resources :comments 
   end 

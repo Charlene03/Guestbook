@@ -1,23 +1,32 @@
-
+<%= render 'shared/title', title: "#{@post.title}"%>
 <div class= "row">
-	 <div class="col-md-6 well">
- 		  <h3><%= @post.title %></h3>
+	 <div class="col-md-8 well">
+ 		   <%= render partial: "categories/category", collection: @post.categories %>
+      
  	  	<p>
- 	    	<%= @post.content %>
+ 	    	<h4><%= @post.content %></h4>
  	  	</p>
+      <small><i>posted by </small><%= " #{@post.user.name}" %></i>
  	 </div>
 </div>
+
 <h4>All comments</h4> 
 <% @post.comments.each do |comment| %>
 	<div class="row">
- 		<div class="col-md-6 well">
+ 		<div class="col-md-8 well">
  	  	<p>
- 	    	<%= comment.content %>
+ 	    	<h5><%= comment.content %></h5>
  	  	</p>
+      <small><i>commented by</small><%= "#{comment.user.name}" %></i>
  		</div>
+
  	</div>
 <% end %>
- 
+
+
+ <% if logged_in? %>
+
+
 <h4>Leave a comment:</h4>
 <%= form_for [@post, @comment] do |f| %>
   <div class="row">
@@ -28,6 +37,7 @@
   </div>
   <br/>
  <% end %>
+<% end %>
 
 
 <div class="row">

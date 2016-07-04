@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+	def show
+ 	    @user = User.find(params[:id])
+ 	end
+
 	def new  #回傳建立新使用者登入表單
 		@user = User.new 
  	end
@@ -16,7 +20,7 @@ class UsersController < ApplicationController
  
     private  #請見 Rails起步走 Ruby on Rails指南 (strong parameters安全機制)
  	  def user_params #user_params是 private方法
-   		params.require(:user).permit(:name, :phone, :email) #params.require需要(:model_name).permit允許(:欄位1, :欄位2)
+   		params.require(:user).permit(:name, :phone, :email, :password) #params.require需要(:model_name).permit允許(:欄位1, :欄位2)
  	  end
 end
 

@@ -3,9 +3,9 @@ class SessionsController < ApplicationController
    end
  
    def create
-      user = User.find_by(name: params[:name])
- 
-    if user && user.authenticate(params[:phone]) #先確認使用者存在
+    user = User.find_by(name: params[:name])
+    
+    if user && user.authenticate(params[:password]) 
          session[:user_id] = user.id  # automatically log in after registration
          
          redirect_to root_path

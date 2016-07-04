@@ -9,8 +9,13 @@
     </div>
     <div class="form-group">
      	<%= f.label :phone %>
-     	<br>
-     	<%= f.string_field :phone %>
+     	<br/>
+     	<%= f.number_field :phone %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password %>
+      <br/>
+      <%= f.password_field :password %>
     </div>
    <br>
    <%= f.submit(@user.new_record? ? 'Register' : 'Update Profile', class: 'btn btn-primary') %>

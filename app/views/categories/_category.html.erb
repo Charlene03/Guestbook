@@ -1,0 +1,13 @@
+<% if category.title == 'Ruby on rails' %>
+  <span class='label label-warning'>
+ <% elsif category.title == 'Java' %>
+   <span class='badge alert-success'>
+ <% elsif category.title == 'News' %>
+   <span class='badge progress-bar-info'>
+ <% elsif category.title == 'Javascript' %>
+   <span class='badge progress-bar-warning'>
+ <% elsif category.title == 'html&css' %>
+   <span class='badge progress-bar-primary'>
+ <% end %>
+   <%= category.title %>
+ </span>

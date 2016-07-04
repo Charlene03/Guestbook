@@ -4,6 +4,7 @@ class AddUsersTable < ActiveRecord::Migration
   		t.string :name
   		t.string :phone
   		t.string :email
+  		t.string :password
 
   		t.timestamps null: false
   	end

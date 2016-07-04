@@ -1,0 +1,724 @@
+Last login: Sun Jun 26 16:03:42 on ttys000
+dd: unknown operand configurations
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rails c
+Running via Spring preloader in process 946
+Loading development environment (Rails 4.2.4)
+irb(main):001:0> Category create(title: "ruby")
+NoMethodError: undefined method `create' for main:Object
+	from (irb):1
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/commands/rails.rb:6:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:191:in `block in serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `fork'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:131:in `block in run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `loop'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> Category.create(title: "ruby")
+   (0.2ms)  begin transaction
+   (0.1ms)  rollback transaction
+NoMethodError: undefined method `name' for #<Category:0x007fccc40ab278>
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/attribute_methods.rb:433:in `method_missing'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:149:in `block in validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:148:in `each'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:148:in `validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/validations/presence.rb:5:in `validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:455:in `public_send'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:455:in `block in make_lambda'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:192:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:192:in `block in simple'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `block in call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `each'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:778:in `_run_validate_callbacks'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validations.rb:398:in `run_validations!'
+... 22 levels...
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<ma n>'irb(main):003:0> Category.create(title: "ruby")
+NoMethodError: undefined method `create' for main:Object
+	from (irb):3
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/commands/rails.rb:6:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:191:in `block in serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `fork'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:131:in `block in run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `loop'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):004:0> Category create(name: "ruby")
+NoMethodError: undefined method `create' for main:Object
+	from (irb):4
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/commands/rails.rb:6:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:191:in `block in serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `fork'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:131:in `block in run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `loop'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):005:0> Category.create(name: "ruby")
+ActiveRecord::UnknownAttributeError: unknown attribute 'name' for Category.
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/attribute_assignment.rb:35:in `each'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/core.rb:564:in `init_attributes'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/core.rb:281:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/inheritance.rb:61:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/inheritance.rb:61:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/persistence.rb:33:in `create'
+	from (irb):5
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):006:0> Category.create(title: "ruby")
+   (0.1ms)  begin transaction
+   (0.2ms)  rollback transaction
+NoMethodError: undefined method `name' for #<Category:0x007fccc0ef7948>
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/attribute_methods.rb:433:in `method_missing'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:149:in `block in validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:148:in `each'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:148:in `validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/validations/presence.rb:5:in `validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:455:in `public_send'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:455:in `block in make_lambda'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:192:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:192:in `block in simple'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `block in call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `each'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:778:in `_run_validate_callbacks'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validations.rb:398:in `run_validations!'
+... 22 levels...
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):007:0> Category.create(title: "ruby")
+   (0.1ms)  begin transaction
+   (0.1ms)  rollback transaction
+NoMethodError: undefined method `name' for #<Category:0x007fccc0e8fa78>
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/attribute_methods.rb:433:in `method_missing'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:149:in `block in validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:148:in `each'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validator.rb:148:in `validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/validations/presence.rb:5:in `validate'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:455:in `public_send'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:455:in `block in make_lambda'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:192:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:192:in `block in simple'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `block in call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `each'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:504:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:778:in `_run_validate_callbacks'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/validations.rb:398:in `run_validations!'
+... 22 levels...
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):008:0> reload!
+Reloading...
+=> true
+irb(main):009:0> Category.create(title: "ruby")
+   (0.1ms)  begin transaction
+  SQL (0.4ms)  INSERT INTO "categories" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ruby"], ["created_at", "2016-06-26 09:21:44.607384"], ["updated_at", "2016-06-26 09:21:44.607384"]]
+   (2.6ms)  commit transaction
+=> #<Category id: 1, title: "ruby", created_at: "2016-06-26 09:21:44", updated_at: "2016-06-26 09:21:44">
+irb(main):010:0> Post.create(title: "Test1", content: "Hello World")
+   (0.1ms)  begin transaction
+  SQL (0.3ms)  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Test1"], ["content", "Hello World"], ["created_at", "2016-06-26 09:22:56.174165"], ["updated_at", "2016-06-26 09:22:56.174165"]]
+   (2.6ms)  commit transaction
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):011:0> post = Post.find(5)
+  Post Load (0.3ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):012:0> post.categories
+NameError: uninitialized constant Post::PostsCategory
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/inheritance.rb:158:in `compute_type'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:271:in `compute_class'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:267:in `klass'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:661:in `source_reflection'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:839:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):12
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):013:0> reload!
+Reloading...
+=> true
+irb(main):014:0> post.categories
+NameError: uninitialized constant Post::PostsCategory
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/inheritance.rb:158:in `compute_type'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:271:in `compute_class'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:267:in `klass'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:661:in `source_reflection'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:839:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):14
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1post = Post.find(5)
+  Post Load (0.3ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):016:0> post.categories
+ActiveRecord::HasManyThroughAssociationNotFoundError: Could not find the association :posts_categories in model Post
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:828:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):16
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):017:0> exit
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rails c
+Running via Spring preloader in process 986
+Loading development environment (Rails 4.2.4)
+irb(main):001:0> post = Post.find(5)
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):002:0> post.categories
+ActiveRecord::StatementInvalid: Could not find table 'post_categories'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:511:in `table_structure'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/sqlite3_adapter.rb:385:in `columns'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/schema_cache.rb:43:in `columns'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/schema_cache.rb:49:in `columns_hash'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association_scope.rb:85:in `column_for'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association_scope.rb:94:in `bind'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association_scope.rb:103:in `last_chain_scope'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association_scope.rb:139:in `add_constraints'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association_scope.rb:39:in `scope'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association_scope.rb:5:in `scope'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:97:in `association_scope'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:86:in `scope'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/collection_association.rb:423:in `scope'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/collection_proxy.rb:37:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:106:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:106:in `create'
+... 4 levels...
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):003:0> reload!
+Reloading...
+=> true
+irb(main):004:0> post = Post.find(5)
+  Post Load (0.3ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):005:0> post.categories
+ActiveRecord::HasManyThroughAssociationNotFoundError: Could not find the association :post_categories in model Post
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:828:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):5
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):006:0> reload!
+Reloading...
+=> true
+irb(main):007:0> post.categories
+ActiveRecord::HasManyThroughAssociationNotFoundError: Could not find the association :post_categories in model Post
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:828:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):7
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1post.categories
+ActiveRecord::HasManyThroughAssociationNotFoundError: Could not find the association :post_categories in model Post
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:828:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):8
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):009:0> reload!
+Reloading...
+=> true
+irb(main):010:0> post = Post.find(5)
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):011:0> post.categories
+NameError: uninitialized constant Post::PostsAndCategory
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/inheritance.rb:158:in `compute_type'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:271:in `compute_class'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:267:in `klass'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:661:in `source_reflection'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:839:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):11
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):012:0> exit
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rails g migration categories_posts 
+LinCharlenedeMacBook-Air:guestbooks Charlene$ 
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rails g migration remove_categories_and_posts_table
+Running via Spring preloader in process 1013
+      invoke  active_record
+      create    db/migrate/20160626093218_remove_categories_and_posts_table.rb
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rake db:migrate
+== 20160626093218 RemoveCategoriesAndPostsTable: migrating ====================
+-- table(:posts_and_categories)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+undefined method `table' for #<RemoveCategoriesAndPostsTable:0x007fa4b2fefdb8>
+/Users/Charlene/guestbooks/db/migrate/20160626093218_remove_categories_and_posts_table.rb:3:in `change'
+NoMethodError: undefined method `table' for #<RemoveCategoriesAndPostsTable:0x007fa4b2fefdb8>
+/Users/Charlene/guestbooks/db/migrate/20160626093218_remove_categories_and_posts_table.rb:3:in `change'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rake db:migrate
+== 20160626093218 RemoveCategoriesAndPostsTable: migrating ====================
+-- drop_table(:posts_and_categories)
+   -> 0.0006s
+-- create_table(:categories_posts)
+   -> 0.0012s
+== 20160626093218 RemoveCategoriesAndPostsTable: migrated (0.0019s) ===========
+
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rails cc
+Error: Command 'cc' not recognized
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+LinCharlenedeMacBook-Air:guestbooks Charlene$ 
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rails c
+Running via Spring preloader in process 1083
+Loading development environment (Rails 4.2.4)
+irb(main):001:0> post = Post.find(5)
+  Post Load (0.3ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):002:0> post.categories
+NameError: uninitialized constant Post::PostsAndCategory
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/inheritance.rb:158:in `compute_type'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:271:in `compute_class'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:267:in `klass'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:661:in `source_reflection'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/reflection.rb:839:in `check_validity!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/association.rb:25:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `new'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations.rb:162:in `association'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.4/lib/active_record/associations/builder/association.rb:115:in `categories'
+	from (irb):2
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):003:0> 
+irb(main):004:0* exit
+LinCharlenedeMacBook-Air:guestbooks Charlene$ rails c
+Running via Spring preloader in process 1109
+Loading development environment (Rails 4.2.4)
+irb(main):001:0> post =Post.find(5)
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+=> #<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">
+irb(main):002:0> post.categories
+  Category Load (0.2ms)  SELECT "categories".* FROM "categories" INNER JOIN "categories_posts" ON "categories"."id" = "categories_posts"."category_id" WHERE "categories_posts"."post_id" = ?  [["post_id", 5]]
+=> #<ActiveRecord::Associations::CollectionProxy []>
+irb(main):003:0> post.categories
+=> #<ActiveRecord::Associations::CollectionProxy []>
+irb(main):004:0> post.categories << Category.first
+  Category Load (0.3ms)  SELECT  "categories".* FROM "categories"  ORDER BY "categories"."id" ASC LIMIT 1
+   (0.2ms)  begin transaction
+  SQL (0.3ms)  INSERT INTO "categories_posts" ("post_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["post_id", 5], ["category_id", 1], ["created_at", "2016-06-26 09:48:45.033213"], ["updated_at", "2016-06-26 09:48:45.033213"]]
+   (2.5ms)  commit transaction
+=> #<ActiveRecord::Associations::CollectionProxy [#<Category id: 1, title: "ruby", created_at: "2016-06-26 09:21:44", updated_at: "2016-06-26 09:21:44">]>
+irb(main):005:0> post.categories
+=> #<ActiveRecord::Associations::CollectionProxy [#<Category id: 1, title: "ruby", created_at: "2016-06-26 09:21:44", updated_at: "2016-06-26 09:21:44">]>
+irb(main):006:0> cat = Category.first
+  Category Load (0.4ms)  SELECT  "categories".* FROM "categories"  ORDER BY "categories"."id" ASC LIMIT 1
+=> #<Category id: 1, title: "ruby", created_at: "2016-06-26 09:21:44", updated_at: "2016-06-26 09:21:44">
+irb(main):007:0> cat.posts
+  Post Load (0.3ms)  SELECT "posts".* FROM "posts" INNER JOIN "categories_posts" ON "posts"."id" = "categories_posts"."post_id" WHERE "categories_posts"."category_id" = ?  [["category_id", 1]]
+=> #<ActiveRecord::Associations::CollectionProxy [#<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">]>
+irb(main):008:0> cat.posts << Post.find(4)
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
+   (0.1ms)  begin transaction
+  SQL (0.6ms)  INSERT INTO "categories_posts" ("category_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["category_id", 1], ["post_id", 4], ["created_at", "2016-06-26 09:50:24.767695"], ["updated_at", "2016-06-26 09:50:24.767695"]]
+   (2.6ms)  commit transaction
+=> #<ActiveRecord::Associations::CollectionProxy [#<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">, #<Post id: 4, title: "test", content: "test test", user_id: 2, created_at: "2016-06-26 09:09:33", updated_at: "2016-06-26 09:09:33">]>
+irb(main):009:0> cat.posts
+=> #<ActiveRecord::Associations::CollectionProxy [#<Post id: 5, title: "Test1", content: "Hello World", user_id: nil, created_at: "2016-06-26 09:22:56", updated_at: "2016-06-26 09:22:56">, #<Post id: 4, title: "test", content: "test test", user_id: 2, created_at: "2016-06-26 09:09:33", updated_at: "2016-06-26 09:09:33">]>
+irb(main):010:0> 
+irb(main):011:0* 
+irb(main):012:0* 
+irb(main):013:0* 
+irb(main):014:0* Category.create(:title => "Java")
+   (4.8ms)  begin transaction
+  SQL (6.2ms)  INSERT INTO "categories" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "Java"], ["created_at", "2016-07-03 10:24:37.915340"], ["updated_at", "2016-07-03 10:24:37.915340"]]
+   (2.8ms)  commit transaction
+=> #<Category id: 2, title: "Java", created_at: "2016-07-03 10:24:37", updated_at: "2016-07-03 10:24:37">
+irb(main):015:0> Category.create(:title => "News")
+   (0.1ms)  begin transaction
+  SQL (0.5ms)  INSERT INTO "categories" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "News"], ["created_at", "2016-07-03 10:25:03.551770"], ["updated_at", "2016-07-03 10:25:03.551770"]]
+   (3.0ms)  commit transaction
+=> #<Category id: 3, title: "News", created_at: "2016-07-03 10:25:03", updated_at: "2016-07-03 10:25:03">
+irb(main):016:0> Category.create(:title => "Javascript")
+   (0.1ms)  begin transaction
+  SQL (0.5ms)  INSERT INTO "categories" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "Javascript"], ["created_at", "2016-07-03 10:25:34.709677"], ["updated_at", "2016-07-03 10:25:34.709677"]]
+   (2.5ms)  commit transaction
+=> #<Category id: 4, title: "Javascript", created_at: "2016-07-03 10:25:34", updated_at: "2016-07-03 10:25:34">
+irb(main):017:0> Category.create(:title => "html&css")
+   (0.2ms)  begin transaction
+  SQL (0.5ms)  INSERT INTO "categories" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "html&css"], ["created_at", "2016-07-03 10:26:10.088422"], ["updated_at", "2016-07-03 10:26:10.088422"]]
+   (2.7ms)  commit transaction
+=> #<Category id: 5, title: "html&css", created_at: "2016-07-03 10:26:10", updated_at: "2016-07-03 10:26:10">
+irb(main):018:0> 
+irb(main):019:0* 
+irb(main):020:0* post =Post.find(1)
+  Post Load (1.0ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+=> #<Post id: 1, title: "controller", content: "what's is params?", user_id: 1, created_at: "2016-06-10 05:13:49", updated_at: "2016-06-10 05:13:49">
+irb(main):021:0> 
+irb(main):022:0* post.categories
+  Category Load (0.3ms)  SELECT "categories".* FROM "categories" INNER JOIN "categories_posts" ON "categories"."id" = "categories_posts"."category_id" WHERE "categories_posts"."post_id" = ?  [["post_id", 1]]
+=> #<ActiveRecord::Associations::CollectionProxy []>
+irb(main):023:0> post =Post.find(1)
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+=> #<Post id: 1, title: "controller", content: "what's is params?", user_id: 1, created_at: "2016-06-10 05:13:49", updated_at: "2016-06-10 05:13:49">
+irb(main):024:0> post.name
+NoMethodError: undefined method `name' for #<Post:0x007fccc58194c8>
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/attribute_methods.rb:433:in `method_missing'
+	from (irb):24
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/commands/rails.rb:6:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:191:in `block in serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `fork'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:131:in `block in run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `loop'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):025:0> 
+irb(main):026:0* post.category
+NoMethodError: undefined method `category' for #<Post:0x007fccc58194c8>
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.4/lib/active_model/attribute_methods.rb:433:in `method_missing'
+	from (irb):26
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:110:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/console.rb:9:in `start'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/Charlene/guestbooks/bin/rails:9:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/commands/rails.rb:6:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:191:in `block in serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `fork'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:161:in `serve'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:131:in `block in run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `loop'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application.rb:125:in `run'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/Charlene/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):027:0> 
+irb(main):028:0* 
+irb(main):029:0* Category.first
+  Category Load (0.9ms)  SELECT  "categories".* FROM "categories"  ORDER BY "categories"."id" ASC LIMIT 1
+=> #<Category id: 1, title: "ruby", created_at: "2016-06-26 09:21:44", updated_at: "2016-06-26 09:21:44">
+irb(main):030:0> post.categories
+  Category Load (0.6ms)  SELECT "categories".* FROM "categories" INNER JOIN "categories_posts" ON "categories"."id" = "categories_posts"."category_id" WHERE "categories_posts"."post_id" = ?  [["post_id", 1]]
+=> #<ActiveRecord::Associations::CollectionProxy []>
+irb(main):031:0> dog = Category.first
+  Category Load (0.5ms)  SELECT  "categories".* FROM "categories"  ORDER BY "categories"."id" ASC LIMIT 1
+=> #<Category id: 1, title: "ruby", created_at: "2016-06-26 09:21:44", updated_at: "2016-06-26 09:21:44">
+irb(main):032:0> dog.posts
+  Post Load (0.3ms)  SELECT "posts".* FROM "posts" INNER JOIN "categories_posts" ON "posts"."id" = "categories_posts"."post_id" WHERE "categories_posts"."category_id" = ?  [["category_id", 1]]
+=> #<ActiveRecord::Associations::CollectionProxy [#<Post id: 4, title: "test", content: "test test", user_id: 2, created_at: "2016-06-26 09:09:33", updated_at: "2016-06-26 09:09:33">]>
+irb(main):033:0> dog.posts << Post.find(1)
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+   (0.5ms)  begin transaction
+  SQL (6.1ms)  INSERT INTO "categories_posts" ("category_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["category_id", 1], ["post_id", 1], ["created_at", "2016-07-03 13:40:21.236197"], ["updated_at", "2016-07-03 13:40:21.236197"]]
+   (2.8ms)  commit transaction
+=> #<ActiveRecord::Associations::CollectionProxy [#<Post id: 4, title: "test", content: "test test", user_id: 2, created_at: "2016-06-26 09:09:33", updated_at: "2016-06-26 09:09:33">, #<Post id: 1, title: "controller", content: "what's is params?", user_id: 1, created_at: "2016-06-10 05:13:49", updated_at: "2016-06-10 05:13:49">]>
+irb(main):034:0> 
